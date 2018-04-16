@@ -23,7 +23,7 @@ public class BasicController {
 
 	@RequestMapping("/")
 	public String welcome(Map<String, String> model) {
-		model.put("message", "hello");
+		model.put("message", "hello!");
 		return "welcome";
 	}
 
