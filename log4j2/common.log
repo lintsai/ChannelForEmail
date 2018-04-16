@@ -1,0 +1,5 @@
+[18/04/16 12:47:46.332][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/16 12:47:46.336][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/16 12:47:46.336][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/16 12:47:46.781][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/16 12:47:46.781][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
