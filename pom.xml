@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.2.RELEASE</version>
+		<version>1.5.6.RELEASE</version>
 		<relativePath />
 	</parent>
 
@@ -173,6 +173,33 @@
 			<artifactId>ecj</artifactId>
 			<version>4.6.1</version>
 			<scope>provided</scope>
+		</dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-email</artifactId>
+            <version>1.5</version>
+        </dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.sql2o/sql2o -->
+		<dependency>
+			<groupId>org.sql2o</groupId>
+			<artifactId>sql2o</artifactId>
+			<version>1.5.4</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/sqljdbc4 -->
+		<!--<dependency>-->
+			<!--<groupId>com.microsoft.sqlserver</groupId>-->
+			<!--<artifactId>sqljdbc4</artifactId>-->
+			<!--<version>4.0</version>-->
+		<!--</dependency>-->
+
+		<dependency>
+			<groupId>com.fasterxml</groupId>
+			<artifactId>classmate</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 
 	</dependencies>

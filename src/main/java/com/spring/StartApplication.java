@@ -8,13 +8,13 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.EnableMBeanExport;
 import org.springframework.context.annotation.ImportResource;
-
-import com.util.Util;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @ComponentScan({"com"})
 @EnableMBeanExport(defaultDomain="${projectName}")
 @ImportResource("classpath:spring-config.xml")
+@EnableScheduling
 public class StartApplication extends SpringBootServletInitializer{
 	
     @Override
