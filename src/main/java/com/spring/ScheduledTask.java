@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import com.dao.ChangeTableData;
 import com.dao.GetTableData;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -34,7 +35,7 @@ public class ScheduledTask {
     private static final SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 //    private Integer count0 = 1;
 //    private Integer count1 = 1;
-    private Integer count2 = 1;
+//    private Integer count2 = 1;
     
 //    @Scheduled(fixedRate = 5000)
 //    public void reportCurrentTime() throws InterruptedException {
@@ -68,6 +69,8 @@ public class ScheduledTask {
             String msgtype = emailOutJsonObject.get("msgtype").getAsString();
             String emailToName = emailOutJsonObject.get("toaddresses").getAsString();
 
+            String id = emailOutJsonObject.get("id").getAsString();
+
             String emailToNameForCc = "none";
             if(emailOutJsonObject.has("ccaddresses")){
                 emailToNameForCc = emailOutJsonObject.get("ccaddresses").getAsString();
@@ -88,20 +91,6 @@ public class ScheduledTask {
                 emailAttach = emailOutJsonObject.get("attach").getAsString();
             }
 
-
-//        String subject = "測試抬頭"+count2;
-//        String content = String.format("+++Count: %s，DateTime：%s", count2, dateFormat.format(new Date()));
-//        String emailToName = "holylin@crm.com.tw";
-//        String emailToNameForCc = "none";
-//        String emailToNameForBcc = "none";
-//        String aEmailAttachName = "";
-//        String aEmailAttach = "";
-//        String msgtype = "rtf"; //text, html, rtf
-//        String contentType = "Message/Partial";
-
-//        String email_SenderName = "Lin";
-//        String email_SenderAddress = "lintsai@crm.com.tw";
-
             JsonArray fromEmailInfoArray = new JsonArray();
             try {
                 fromEmailInfoArray = GetTableData.getFromEmailInfo(email_SenderAddress);
@@ -119,16 +108,6 @@ public class ScheduledTask {
             String email_UserId = fromEmailInfoArray.get(0).getAsJsonObject().get("userid").getAsString();
             String email_IsSSL = fromEmailInfoArray.get(0).getAsJsonObject().get("isssl").getAsString();
 
-////        String email_MailServer = "localhost";
-//        String email_MailServer = "smtp.office365.com";
-////        String email_MailServer_port = "25";
-//        String email_MailServer_port = "587";
-//        String email_UserId = "lintsai@crm.com.tw";
-//        String email_Password = "Ji3g4h94cj/6xup6";
-//        String email_Charset = "UTF-8";
-//        String email_IsSSL = "false";
-//        String email_IsTLS = "true";
-
             Util.getFileLogger().info(
                     "[InfoAPI]ToolsController(EmailSender) - emailToName: "
                             + emailToName);
@@ -142,7 +121,6 @@ public class ScheduledTask {
                         "[InfoAPI]ToolsController(EmailSender) - emailToNameVal: "
                                 + emailToNameVal);
             }
-//        jsonObject.addProperty("emailToName", emailToName);
 
             Util.getFileLogger().info(
                     "[InfoAPI]ToolsController(EmailSender) - emailToNameForCc: "
@@ -156,7 +134,6 @@ public class ScheduledTask {
                             emailToNameForCcVal);
                 }
             }
-
 
             Util.getFileLogger().info(
                     "[InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: "
@@ -178,27 +155,22 @@ public class ScheduledTask {
                 String csv = null;
                 try {
                     JSONArray docs = new JSONArray(emailAttach);
-
                     csv = CDL.toString(docs);
                 } catch (JSONException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
-
                     Util.getFileLogger().error(
                             "[InfoAPI]ToolsController(EmailSender) - JSONException: "
                                     + e.getMessage());
-
                 }
                 try {
                     emailAttachAsBytes = csv.getBytes("BIG5");
                 } catch (UnsupportedEncodingException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
-
                     Util.getFileLogger().error(
                             "[InfoAPI]ToolsController(EmailSender) - Exception: "
                                     + e.getMessage());
-
                 }
                 Util.getFileLogger().info(
                         "[InfoAPI]ToolsController(EmailSender) - csv: " + csv);
@@ -207,11 +179,8 @@ public class ScheduledTask {
             EmailSender sender = new EmailSender(emailToNameMap,
                     emailToNameMapForCc, emailToNameMapForBcc, emailAttachMap,
                     subject, content);
-//		sender.setSenderAddress("ChatRobot@fareastone.com.tw");
-//		sender.setSenderName("ITT");
             sender.setSenderAddress(email_SenderAddress);
             sender.setSenderName(email_SenderName);
-
             try {
                 Util.getFileLogger()
                         .info("[InfoAPI]ToolsController(EmailSender) - setEmailServer GO");
@@ -255,28 +224,32 @@ public class ScheduledTask {
                 sender.setContentType(contentType);
                 Util.getFileLogger().info(
                         "[InfoAPI]ToolsController(EmailSender) - sendEmail GO");
-                sender.sendEmail();
+
+                String respMsg = sender.sendEmail();
+                Util.getFileLogger().info(
+                        "[InfoAPI]ToolsController(EmailSender) - respMsg: "+respMsg);
+
+                //update[tblEmailOut] table
+                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
+
+                int updateCount = ChangeTableData.updateEmailOut(id,sdf.format(new Date()));
+
+                Util.getFileLogger().info(
+                        "[InfoAPI]ToolsController(EmailSender) - updateCount: "+updateCount);
+
                 Util.getFileLogger().info(
                         "[InfoAPI]ToolsController(EmailSender) - sendEmail END");
             } catch (EmailException e) {
                 e.printStackTrace();
-
                 Util.getFileLogger().error(
                         "[InfoAPI]ToolsController(EmailSender) - EmailException: "
                                 + e.getMessage());
-
             } catch (Exception e) {
                 e.printStackTrace();
-
                 Util.getFileLogger().error(
                         "[InfoAPI]ToolsController(EmailSender) - Exception: "
                                 + e.getMessage());
-
             }
-
-            //update[tblEmailOut] table
-
-            System.out.println(String.format("+++Count: %s，DateTime：%s", count2++, dateFormat.format(new Date())));
         }
     }
     

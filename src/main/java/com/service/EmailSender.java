@@ -52,11 +52,13 @@ public class EmailSender {
         this.content = content;
     }
 
-    public void sendEmail() throws Exception {
+    public String sendEmail() throws Exception {
     	
     	Util.getFileLogger()
 		.info("[InfoAPI]EmailSender(sendEmail) start ###");
-    	
+
+        String msg = null;
+
         if (emailToNameMap != null) {
             HtmlEmail htmlEmail = null;
             htmlEmail = new HtmlEmail();
@@ -122,13 +124,14 @@ public class EmailSender {
 //            htmlEmail.attach(ds, name, description)
 //            htmlEmail.attach(new ByteArrayDataSource(pdfBytes, "application/pdf"),"document.pdf", "Document description",EmailAttachment.ATTACHMENT);
             Util.getFileLogger().info("[InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO");
-            htmlEmail.send();
+            msg = htmlEmail.send();
             Util.getFileLogger().info("[InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END");
         }
         
         Util.getFileLogger()
 		.info("[InfoAPI]EmailSender(sendEmail) End ###");
 
+        return msg;
     }
 
     /**

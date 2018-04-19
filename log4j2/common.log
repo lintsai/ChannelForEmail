@@ -3,3 +3,483 @@
 [18/04/16 12:47:46.336][ INFO][com.util.Util                      -55   ] - Util() end
 [18/04/16 12:47:46.781][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
 [18/04/16 12:47:46.781][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/17 18:00:17.113][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/17 18:00:17.116][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/17 18:00:17.117][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/17 18:00:17.523][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/17 18:00:17.523][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/17 18:01:09.593][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/17 18:01:09.596][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/17 18:01:09.596][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/17 18:01:09.979][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/17 18:01:09.979][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/18 18:28:28.519][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/18 18:28:28.523][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/18 18:28:28.523][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/18 18:28:28.955][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/18 18:28:28.956][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/18 18:29:00.700][ INFO][com.spring.ScheduledTask           -85   ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/18 18:29:00.700][ INFO][com.spring.ScheduledTask           -94   ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/18 18:29:00.701][ INFO][com.spring.ScheduledTask           -100  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 18:29:00.701][ INFO][com.spring.ScheduledTask           -114  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 18:29:00.701][ INFO][com.spring.ScheduledTask           -170  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 18:29:00.702][ INFO][com.spring.ScheduledTask           -171  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 18:29:00.702][ INFO][com.spring.ScheduledTask           -174  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 18:29:00.702][ INFO][com.spring.ScheduledTask           -177  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 18:29:00.702][ INFO][com.spring.ScheduledTask           -180  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 18:29:00.702][ INFO][com.spring.ScheduledTask           -183  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 18:29:00.702][ INFO][com.spring.ScheduledTask           -186  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 18:29:00.702][ INFO][com.spring.ScheduledTask           -189  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 18:29:00.702][ INFO][com.spring.ScheduledTask           -192  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 18:29:00.702][ INFO][com.spring.ScheduledTask           -195  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 18:29:00.703][ INFO][com.spring.ScheduledTask           -209  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 18:29:00.703][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 18:29:00.706][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 18:29:00.716][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 18:29:00.716][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 18:29:00.716][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 18:29:00.716][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 18:29:00.716][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 18:29:14.312][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/18 18:29:14.312][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/18 18:29:14.312][ INFO][com.spring.ScheduledTask           -212  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/18 18:33:41.944][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/18 18:33:41.948][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/18 18:33:41.948][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/18 18:33:42.382][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/18 18:33:42.383][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/18 18:34:00.697][ INFO][com.spring.ScheduledTask           -92   ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/18 18:34:00.698][ INFO][com.spring.ScheduledTask           -101  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/18 18:34:00.698][ INFO][com.spring.ScheduledTask           -107  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 18:34:00.698][ INFO][com.spring.ScheduledTask           -121  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 18:34:00.699][ INFO][com.spring.ScheduledTask           -177  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 18:34:00.699][ INFO][com.spring.ScheduledTask           -178  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 18:34:00.699][ INFO][com.spring.ScheduledTask           -181  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 18:34:00.699][ INFO][com.spring.ScheduledTask           -184  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 18:34:00.699][ INFO][com.spring.ScheduledTask           -187  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 18:34:00.700][ INFO][com.spring.ScheduledTask           -190  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 18:34:00.700][ INFO][com.spring.ScheduledTask           -193  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 18:34:00.700][ INFO][com.spring.ScheduledTask           -196  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 18:34:00.700][ INFO][com.spring.ScheduledTask           -199  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 18:34:00.700][ INFO][com.spring.ScheduledTask           -202  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 18:34:00.700][ INFO][com.spring.ScheduledTask           -216  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 18:34:00.700][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 18:34:00.706][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 18:34:00.717][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 18:34:00.717][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 18:34:00.717][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 18:34:00.717][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 18:34:00.717][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 18:34:13.470][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/18 18:34:13.471][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/18 18:34:13.471][ INFO][com.spring.ScheduledTask           -219  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/18 18:35:00.322][ INFO][com.spring.ScheduledTask           -92   ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/18 18:35:00.323][ INFO][com.spring.ScheduledTask           -101  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/18 18:35:00.323][ INFO][com.spring.ScheduledTask           -107  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 18:35:00.323][ INFO][com.spring.ScheduledTask           -121  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 18:35:00.323][ INFO][com.spring.ScheduledTask           -177  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 18:35:00.324][ INFO][com.spring.ScheduledTask           -178  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 18:35:00.324][ INFO][com.spring.ScheduledTask           -181  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 18:35:00.324][ INFO][com.spring.ScheduledTask           -184  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 18:35:00.324][ INFO][com.spring.ScheduledTask           -187  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 18:35:00.324][ INFO][com.spring.ScheduledTask           -190  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 18:35:00.324][ INFO][com.spring.ScheduledTask           -193  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 18:35:00.324][ INFO][com.spring.ScheduledTask           -196  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 18:35:00.325][ INFO][com.spring.ScheduledTask           -199  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 18:35:00.325][ INFO][com.spring.ScheduledTask           -202  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 18:35:00.325][ INFO][com.spring.ScheduledTask           -216  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 18:35:00.325][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 18:35:00.325][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 18:35:00.326][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 18:35:00.326][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 18:35:00.326][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 18:35:00.327][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 18:35:00.327][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 18:35:12.297][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/18 18:35:12.297][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/18 18:35:12.298][ INFO][com.spring.ScheduledTask           -219  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/18 18:36:00.304][ INFO][com.spring.ScheduledTask           -92   ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/18 18:36:00.305][ INFO][com.spring.ScheduledTask           -101  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/18 18:36:00.305][ INFO][com.spring.ScheduledTask           -107  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 18:36:00.306][ INFO][com.spring.ScheduledTask           -121  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 18:36:00.306][ INFO][com.spring.ScheduledTask           -177  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 18:36:00.307][ INFO][com.spring.ScheduledTask           -178  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 18:36:00.308][ INFO][com.spring.ScheduledTask           -181  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 18:36:00.308][ INFO][com.spring.ScheduledTask           -184  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 18:36:00.308][ INFO][com.spring.ScheduledTask           -187  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 18:36:00.309][ INFO][com.spring.ScheduledTask           -190  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 18:36:00.309][ INFO][com.spring.ScheduledTask           -193  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 18:36:00.310][ INFO][com.spring.ScheduledTask           -196  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 18:36:00.310][ INFO][com.spring.ScheduledTask           -199  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 18:36:00.310][ INFO][com.spring.ScheduledTask           -202  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 18:36:00.311][ INFO][com.spring.ScheduledTask           -216  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 18:36:00.311][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 18:36:00.311][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 18:36:00.312][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 18:36:00.312][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 18:36:00.312][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 18:36:00.313][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 18:36:00.313][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 18:36:15.051][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/18 18:36:15.051][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/18 18:36:15.052][ INFO][com.spring.ScheduledTask           -219  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/18 18:37:00.354][ INFO][com.spring.ScheduledTask           -92   ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/18 18:37:00.355][ INFO][com.spring.ScheduledTask           -101  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/18 18:37:00.355][ INFO][com.spring.ScheduledTask           -107  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 18:37:00.356][ INFO][com.spring.ScheduledTask           -121  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 18:37:00.356][ INFO][com.spring.ScheduledTask           -177  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 18:37:00.357][ INFO][com.spring.ScheduledTask           -178  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 18:37:00.357][ INFO][com.spring.ScheduledTask           -181  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 18:37:00.357][ INFO][com.spring.ScheduledTask           -184  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 18:37:00.358][ INFO][com.spring.ScheduledTask           -187  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 18:37:00.358][ INFO][com.spring.ScheduledTask           -190  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 18:37:00.358][ INFO][com.spring.ScheduledTask           -193  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 18:37:00.359][ INFO][com.spring.ScheduledTask           -196  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 18:37:00.359][ INFO][com.spring.ScheduledTask           -199  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 18:37:00.359][ INFO][com.spring.ScheduledTask           -202  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 18:37:00.360][ INFO][com.spring.ScheduledTask           -216  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 18:37:00.360][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 18:37:00.360][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 18:37:00.361][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 18:37:00.361][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 18:37:00.362][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 18:37:00.362][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 18:37:00.363][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 18:37:13.817][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/18 18:37:13.818][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/18 18:37:13.818][ INFO][com.spring.ScheduledTask           -219  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/18 19:03:32.471][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/18 19:03:32.475][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/18 19:03:32.475][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/18 19:03:32.935][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/18 19:03:32.935][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/18 19:04:01.084][ INFO][com.spring.ScheduledTask           -114  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/18 19:04:01.085][ INFO][com.spring.ScheduledTask           -123  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/18 19:04:01.086][ INFO][com.spring.ScheduledTask           -129  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 19:04:01.086][ INFO][com.spring.ScheduledTask           -143  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 19:04:01.089][ INFO][com.spring.ScheduledTask           -199  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 19:04:01.089][ INFO][com.spring.ScheduledTask           -200  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 19:04:01.090][ INFO][com.spring.ScheduledTask           -203  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 19:04:01.090][ INFO][com.spring.ScheduledTask           -206  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 19:04:01.090][ INFO][com.spring.ScheduledTask           -209  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 19:04:01.091][ INFO][com.spring.ScheduledTask           -212  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 19:04:01.091][ INFO][com.spring.ScheduledTask           -215  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 19:04:01.092][ INFO][com.spring.ScheduledTask           -218  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 19:04:01.092][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 19:04:01.093][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 19:04:01.094][ INFO][com.spring.ScheduledTask           -238  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 19:04:01.094][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 19:04:01.106][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 19:04:01.131][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 19:04:01.131][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 19:04:01.131][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 19:04:01.131][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 19:04:01.132][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 19:12:53.085][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/18 19:12:53.088][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/18 19:12:53.088][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/18 19:12:53.541][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/18 19:12:53.541][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/18 19:13:01.004][ INFO][com.spring.ScheduledTask           -132  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/18 19:13:01.006][ INFO][com.spring.ScheduledTask           -141  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/18 19:13:01.006][ INFO][com.spring.ScheduledTask           -147  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 19:13:01.006][ INFO][com.spring.ScheduledTask           -161  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 19:13:01.009][ INFO][com.spring.ScheduledTask           -217  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 19:13:01.009][ INFO][com.spring.ScheduledTask           -218  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 19:13:01.010][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 19:13:01.010][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 19:13:01.011][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 19:13:01.011][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 19:13:01.011][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 19:13:01.012][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 19:13:01.012][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 19:13:01.013][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 19:13:01.014][ INFO][com.spring.ScheduledTask           -256  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 19:13:01.014][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 19:13:01.028][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 19:13:01.046][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 19:13:01.046][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 19:13:01.046][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 19:13:01.046][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 19:13:01.048][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 19:13:13.771][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/18 19:13:13.772][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/18 19:13:13.773][ INFO][com.spring.ScheduledTask           -259  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/18 19:14:28.903][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/18 19:14:28.907][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/18 19:14:28.907][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/18 19:14:29.336][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/18 19:14:29.336][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/18 19:15:01.106][ INFO][com.spring.ScheduledTask           -132  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/18 19:15:01.107][ INFO][com.spring.ScheduledTask           -141  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/18 19:15:01.108][ INFO][com.spring.ScheduledTask           -147  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 19:15:01.108][ INFO][com.spring.ScheduledTask           -161  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 19:15:01.110][ INFO][com.spring.ScheduledTask           -217  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 19:15:01.111][ INFO][com.spring.ScheduledTask           -218  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 19:15:01.112][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 19:15:01.112][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 19:15:01.112][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 19:15:01.113][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 19:15:01.113][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 19:15:01.114][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 19:15:01.114][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 19:15:01.115][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 19:15:01.115][ INFO][com.spring.ScheduledTask           -256  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 19:15:01.116][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 19:15:01.128][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 19:15:01.155][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 19:15:01.156][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 19:15:01.156][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 19:15:01.156][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 19:15:01.157][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 19:15:11.986][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/18 19:15:11.987][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/18 19:15:11.987][ INFO][com.spring.ScheduledTask           -259  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/18 19:15:12.336][ INFO][com.spring.ScheduledTask           -132  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: lintsai@crm.com.tw
+[18/04/18 19:15:12.336][ INFO][com.spring.ScheduledTask           -141  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: lintsai@crm.com.tw
+[18/04/18 19:15:12.337][ INFO][com.spring.ScheduledTask           -147  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 19:15:12.338][ INFO][com.spring.ScheduledTask           -161  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 19:15:12.338][ INFO][com.spring.ScheduledTask           -217  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 19:15:12.338][ INFO][com.spring.ScheduledTask           -218  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 19:15:12.338][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 19:15:12.338][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 19:15:12.339][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 19:15:12.339][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 19:15:12.339][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 19:15:12.339][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 19:15:12.339][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 19:15:12.339][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 19:15:12.340][ INFO][com.spring.ScheduledTask           -256  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 19:15:12.340][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 19:15:12.340][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 19:15:12.340][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 19:15:12.340][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 19:15:12.341][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 19:15:12.341][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 19:15:12.341][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 19:15:20.103][ERROR][com.spring.ScheduledTask           -264  ] - [InfoAPI]ToolsController(EmailSender) - EmailException: Sending the email to the following server failed : smtp.office365.com:587
+[18/04/18 19:17:08.731][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/18 19:17:08.734][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/18 19:17:08.735][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/18 19:17:09.168][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/18 19:17:09.168][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/18 19:18:01.293][ INFO][com.spring.ScheduledTask           -132  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/18 19:18:01.294][ INFO][com.spring.ScheduledTask           -141  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/18 19:18:01.295][ INFO][com.spring.ScheduledTask           -147  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 19:18:01.295][ INFO][com.spring.ScheduledTask           -161  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 19:18:01.298][ INFO][com.spring.ScheduledTask           -217  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 19:18:01.299][ INFO][com.spring.ScheduledTask           -218  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 19:18:01.299][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 19:18:01.300][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 19:18:01.301][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 19:18:01.301][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 19:18:01.302][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 19:18:01.303][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 19:18:01.304][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 19:18:01.304][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 19:18:01.305][ INFO][com.spring.ScheduledTask           -256  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 19:18:01.305][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 19:18:01.318][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 19:18:01.341][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 19:18:01.342][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 19:18:01.342][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 19:18:01.342][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 19:18:01.344][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 19:18:13.826][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/18 19:18:13.827][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/18 19:18:13.828][ INFO][com.spring.ScheduledTask           -259  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/18 19:18:14.141][ INFO][com.spring.ScheduledTask           -132  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: lintsai@crm.com.tw
+[18/04/18 19:18:14.142][ INFO][com.spring.ScheduledTask           -141  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: lintsai@crm.com.tw
+[18/04/18 19:18:14.142][ INFO][com.spring.ScheduledTask           -147  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 19:18:14.143][ INFO][com.spring.ScheduledTask           -161  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 19:18:14.143][ INFO][com.spring.ScheduledTask           -217  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 19:18:14.143][ INFO][com.spring.ScheduledTask           -218  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 19:18:14.144][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 19:18:14.144][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: holylin@crm.com.tw
+[18/04/18 19:18:14.144][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: desolati0n
+[18/04/18 19:18:14.145][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 19:18:14.145][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 19:18:14.146][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 19:18:14.146][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 19:18:14.146][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 19:18:14.147][ INFO][com.spring.ScheduledTask           -256  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 19:18:14.147][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 19:18:14.148][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 19:18:14.148][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 19:18:14.148][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 19:18:14.149][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 19:18:14.149][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 19:18:14.150][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 19:18:20.839][ERROR][com.spring.ScheduledTask           -264  ] - [InfoAPI]ToolsController(EmailSender) - EmailException: Sending the email to the following server failed : smtp.office365.com:587
+[18/04/18 19:18:56.776][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/18 19:18:56.780][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/18 19:18:56.780][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/18 19:18:57.228][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/18 19:18:57.228][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/18 19:19:01.340][ INFO][com.spring.ScheduledTask           -132  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/18 19:19:01.342][ INFO][com.spring.ScheduledTask           -141  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/18 19:19:01.342][ INFO][com.spring.ScheduledTask           -147  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 19:19:01.343][ INFO][com.spring.ScheduledTask           -161  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 19:19:01.345][ INFO][com.spring.ScheduledTask           -217  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 19:19:01.345][ INFO][com.spring.ScheduledTask           -218  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 19:19:01.346][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 19:19:01.346][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/18 19:19:01.347][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji3g4h94cj/6xup6
+[18/04/18 19:19:01.347][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 19:19:01.348][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 19:19:01.349][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 19:19:01.349][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 19:19:01.350][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 19:19:01.351][ INFO][com.spring.ScheduledTask           -256  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 19:19:01.352][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 19:19:01.365][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 19:19:01.400][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 19:19:01.400][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 19:19:01.401][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 19:19:01.401][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 19:19:01.404][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 19:19:15.066][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/18 19:19:15.066][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/18 19:19:15.067][ INFO][com.spring.ScheduledTask           -259  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/18 19:19:15.393][ INFO][com.spring.ScheduledTask           -132  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: lintsai@crm.com.tw
+[18/04/18 19:19:15.393][ INFO][com.spring.ScheduledTask           -141  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: lintsai@crm.com.tw
+[18/04/18 19:19:15.393][ INFO][com.spring.ScheduledTask           -147  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/18 19:19:15.394][ INFO][com.spring.ScheduledTask           -161  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/18 19:19:15.394][ INFO][com.spring.ScheduledTask           -217  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/18 19:19:15.395][ INFO][com.spring.ScheduledTask           -218  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/18 19:19:15.395][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/18 19:19:15.396][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: holylin@crm.com.tw
+[18/04/18 19:19:15.396][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Desolati0n
+[18/04/18 19:19:15.397][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/18 19:19:15.397][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/18 19:19:15.397][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/18 19:19:15.398][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/18 19:19:15.398][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/18 19:19:15.399][ INFO][com.spring.ScheduledTask           -256  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/18 19:19:15.399][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/18 19:19:15.399][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/18 19:19:15.400][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/18 19:19:15.400][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/18 19:19:15.401][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/18 19:19:15.401][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/18 19:19:15.402][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/18 19:19:19.771][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/18 19:19:19.771][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/18 19:19:19.772][ INFO][com.spring.ScheduledTask           -259  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/19 10:24:12.752][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/19 10:24:12.757][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/19 10:24:12.757][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/19 10:24:13.301][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/19 10:24:13.301][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/19 10:25:01.571][ INFO][com.spring.ScheduledTask           -135  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/19 10:25:01.572][ INFO][com.spring.ScheduledTask           -144  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/19 10:25:01.572][ INFO][com.spring.ScheduledTask           -150  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/19 10:25:01.573][ INFO][com.spring.ScheduledTask           -164  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/19 10:25:01.575][ INFO][com.spring.ScheduledTask           -220  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/19 10:25:01.576][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/19 10:25:01.576][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/19 10:25:01.576][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/19 10:25:01.577][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji394tp6nz06
+[18/04/19 10:25:01.577][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/19 10:25:01.578][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/19 10:25:01.578][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/19 10:25:01.578][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/19 10:25:01.579][ INFO][com.spring.ScheduledTask           -245  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/19 10:25:01.579][ INFO][com.spring.ScheduledTask           -259  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/19 10:25:01.580][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/19 10:25:01.591][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/19 10:25:01.631][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/19 10:25:01.632][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/19 10:25:01.632][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/19 10:25:01.632][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/19 10:25:01.635][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/19 10:25:12.188][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/19 10:25:12.189][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/19 10:25:12.405][ERROR][com.spring.ScheduledTask           -283  ] - [InfoAPI]ToolsController(EmailSender) - Exception: null
+[18/04/19 10:25:12.721][ INFO][com.spring.ScheduledTask           -135  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: lintsai@crm.com.tw
+[18/04/19 10:25:12.721][ INFO][com.spring.ScheduledTask           -144  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: lintsai@crm.com.tw
+[18/04/19 10:25:12.722][ INFO][com.spring.ScheduledTask           -150  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/19 10:25:12.722][ INFO][com.spring.ScheduledTask           -164  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/19 10:25:12.723][ INFO][com.spring.ScheduledTask           -220  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/19 10:25:12.723][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/19 10:25:12.724][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/19 10:25:12.724][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: holylin@crm.com.tw
+[18/04/19 10:25:12.725][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Desolati0n
+[18/04/19 10:25:12.725][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/19 10:25:12.726][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/19 10:25:12.727][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/19 10:25:12.729][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/19 10:25:12.730][ INFO][com.spring.ScheduledTask           -245  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/19 10:25:12.731][ INFO][com.spring.ScheduledTask           -259  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/19 10:25:12.732][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/19 10:25:12.732][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/19 10:25:12.733][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/19 10:25:12.734][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/19 10:25:12.735][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/19 10:25:12.735][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/19 10:25:12.736][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/19 10:25:16.043][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/19 10:25:16.044][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/19 10:25:16.298][ERROR][com.spring.ScheduledTask           -283  ] - [InfoAPI]ToolsController(EmailSender) - Exception: null
+[18/04/19 10:27:22.436][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/19 10:27:22.440][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/19 10:27:22.440][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/19 10:27:22.903][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/19 10:27:22.903][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
+[18/04/19 10:28:01.420][ INFO][com.spring.ScheduledTask           -135  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: holylin@crm.com.tw
+[18/04/19 10:28:01.421][ INFO][com.spring.ScheduledTask           -144  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: holylin@crm.com.tw
+[18/04/19 10:28:01.421][ INFO][com.spring.ScheduledTask           -150  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/19 10:28:01.422][ INFO][com.spring.ScheduledTask           -164  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/19 10:28:01.424][ INFO][com.spring.ScheduledTask           -220  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/19 10:28:01.425][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/19 10:28:01.425][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/19 10:28:01.425][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: lintsai@crm.com.tw
+[18/04/19 10:28:01.426][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Ji394tp6nz06
+[18/04/19 10:28:01.426][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/19 10:28:01.427][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/19 10:28:01.427][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/19 10:28:01.427][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/19 10:28:01.428][ INFO][com.spring.ScheduledTask           -245  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/19 10:28:01.428][ INFO][com.spring.ScheduledTask           -259  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/19 10:28:01.429][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/19 10:28:01.441][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/19 10:28:01.473][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/19 10:28:01.473][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/19 10:28:01.474][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/19 10:28:01.474][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/19 10:28:01.477][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/19 10:28:12.632][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/19 10:28:12.633][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/19 10:28:12.946][ INFO][com.spring.ScheduledTask           -268  ] - [InfoAPI]ToolsController(EmailSender) - updateCount: 1
+[18/04/19 10:28:12.947][ INFO][com.spring.ScheduledTask           -271  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/19 10:28:13.267][ INFO][com.spring.ScheduledTask           -135  ] - [InfoAPI]ToolsController(EmailSender) - emailToName: lintsai@crm.com.tw
+[18/04/19 10:28:13.268][ INFO][com.spring.ScheduledTask           -144  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameVal: lintsai@crm.com.tw
+[18/04/19 10:28:13.268][ INFO][com.spring.ScheduledTask           -150  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForCc: none
+[18/04/19 10:28:13.268][ INFO][com.spring.ScheduledTask           -164  ] - [InfoAPI]ToolsController(EmailSender) - emailToNameForBcc: none
+[18/04/19 10:28:13.269][ INFO][com.spring.ScheduledTask           -220  ] - [InfoAPI]ToolsController(EmailSender) - setEmailServer GO
+[18/04/19 10:28:13.269][ INFO][com.spring.ScheduledTask           -221  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer: smtp.office365.com
+[18/04/19 10:28:13.270][ INFO][com.spring.ScheduledTask           -224  ] - [InfoAPI]ToolsController(EmailSender) - email_MailServer_port: 587
+[18/04/19 10:28:13.270][ INFO][com.spring.ScheduledTask           -227  ] - [InfoAPI]ToolsController(EmailSender) - email_UserId: holylin@crm.com.tw
+[18/04/19 10:28:13.270][ INFO][com.spring.ScheduledTask           -230  ] - [InfoAPI]ToolsController(EmailSender) - email_Password: Desolati0n
+[18/04/19 10:28:13.271][ INFO][com.spring.ScheduledTask           -233  ] - [InfoAPI]ToolsController(EmailSender) - email_Charset: UTF-8
+[18/04/19 10:28:13.271][ INFO][com.spring.ScheduledTask           -236  ] - [InfoAPI]ToolsController(EmailSender) - email_IsSSL: false
+[18/04/19 10:28:13.271][ INFO][com.spring.ScheduledTask           -239  ] - [InfoAPI]ToolsController(EmailSender) - email_IsTLS: true
+[18/04/19 10:28:13.272][ INFO][com.spring.ScheduledTask           -242  ] - [InfoAPI]ToolsController(EmailSender) - msgtype: rtf
+[18/04/19 10:28:13.272][ INFO][com.spring.ScheduledTask           -245  ] - [InfoAPI]ToolsController(EmailSender) - contentType: Message/Partial
+[18/04/19 10:28:13.272][ INFO][com.spring.ScheduledTask           -259  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail GO
+[18/04/19 10:28:13.273][ INFO][com.service.EmailSender            -58   ] - [InfoAPI]EmailSender(sendEmail) start ###
+[18/04/19 10:28:13.273][ INFO][com.service.EmailSender            -77   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap
+[18/04/19 10:28:13.274][ INFO][com.service.EmailSender            -83   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForCc
+[18/04/19 10:28:13.274][ INFO][com.service.EmailSender            -89   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMapForBcc
+[18/04/19 10:28:13.274][ INFO][com.service.EmailSender            -95   ] - [InfoAPI]EmailSender(sendEmail) -  read emailToNameMap finish
+[18/04/19 10:28:13.275][ INFO][com.service.EmailSender            -105  ] - [InfoAPI]EmailSender(sendEmail) -  read emailAttachMap finish
+[18/04/19 10:28:13.275][ INFO][com.service.EmailSender            -124  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO
+[18/04/19 10:28:15.961][ INFO][com.service.EmailSender            -126  ] - [InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END
+[18/04/19 10:28:15.961][ INFO][com.service.EmailSender            -130  ] - [InfoAPI]EmailSender(sendEmail) End ###
+[18/04/19 10:28:16.267][ INFO][com.spring.ScheduledTask           -268  ] - [InfoAPI]ToolsController(EmailSender) - updateCount: 1
+[18/04/19 10:28:16.268][ INFO][com.spring.ScheduledTask           -271  ] - [InfoAPI]ToolsController(EmailSender) - sendEmail END
+[18/04/19 10:30:23.429][ INFO][com.util.Util                      -51   ] - Util() start
+[18/04/19 10:30:23.432][ INFO][com.util.Util                      -54   ] - Util - ChannelForEmail version: v1.0.0
+[18/04/19 10:30:23.433][ INFO][com.util.Util                      -55   ] - Util() end
+[18/04/19 10:30:23.887][ INFO][com.bean.ApplicationListenerBean   -17   ] - ContextRefreshedEvent start ###################
+[18/04/19 10:30:23.887][ INFO][com.bean.ApplicationListenerBean   -20   ] - ContextRefreshedEvent end ###################
