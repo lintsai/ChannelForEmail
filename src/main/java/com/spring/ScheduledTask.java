@@ -68,6 +68,7 @@ public class ScheduledTask {
             String email_SenderAddress = emailOutJsonObject.get("fromaddress").getAsString();
             String msgtype = emailOutJsonObject.get("msgtype").getAsString();
             String emailToName = emailOutJsonObject.get("toaddresses").getAsString();
+            String ixnId = emailOutJsonObject.get("ixnid").getAsString();
 
             String id = emailOutJsonObject.get("id").getAsString();
 
@@ -232,10 +233,10 @@ public class ScheduledTask {
                 //update[tblEmailOut] table
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 
-                int updateCount = ChangeTableData.updateEmailOut(id,sdf.format(new Date()));
+                JsonObject updateCountJson = ChangeTableData.updateEmailOut(id,ixnId,sdf.format(new Date()));
 
                 Util.getFileLogger().info(
-                        "[InfoAPI]ToolsController(EmailSender) - updateCount: "+updateCount);
+                        "[InfoAPI]ToolsController(EmailSender) - updateCountJson: "+updateCountJson);
 
                 Util.getFileLogger().info(
                         "[InfoAPI]ToolsController(EmailSender) - sendEmail END");

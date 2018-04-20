@@ -40,7 +40,7 @@ public class GetTableData {
 
 		JsonArray jsonarray = new JsonArray();
 
-		String sqlCommands = "SELECT [ID],[FromAddress],[FromPersonal],[ToAddresses],[CcAddresses],[BccAddresses],[SentDate],[Subject],[Content],[Attach],[AttachName],[MsgType],[ContentType],[ExpectTime] FROM [dbo].[tblEmailOut] WHERE SentDate is NULL;";
+		String sqlCommands = "SELECT [ID],[IxnID],[FromAddress],[FromPersonal],[ToAddresses],[CcAddresses],[BccAddresses],[SentDate],[Subject],[Content],[Attach],[AttachName],[MsgType],[ContentType],[ExpectTime] FROM [dbo].[tblEmailOut] WHERE SentDate is NULL;";
 
 		List<Map<String, Object>> list = new ArrayList<>();
 		try (Connection con = sql2o.open()){

@@ -18,8 +18,10 @@ public class ChangeTableData {
 	 * @return
 	 * @throws Exception
 	 */
-	public static int updateEmailOut(String aId, String aSentDate) throws Exception {
-		
+	public static JsonObject updateEmailOut(String aId, String aIxnId, String aSentDate) throws Exception {
+
+		JsonObject jsonObject = new JsonObject();
+
 		try {
 			Class.forName(Util.getSystemParam().get("email_dbDriver"));
 		} catch (ClassNotFoundException e) {
@@ -34,17 +36,25 @@ public class ChangeTableData {
 			sql2o = new Sql2o(Util.getSystemParam().get("email_dbUrl"), Util.getSystemParam().get("email_dbUser"), Util.getSystemParam().get("email_dbPassword"));
 		}
 
-		String sqlCommands = "UPDATE [dbo].[tblEmailOut] " +
+		String emailOutSqlCommands = "UPDATE [dbo].[tblEmailOut] " +
 				"SET SentDate = :sentDate " +
 				"WHERE id = :id";
 
-		int result = 0;
+		String ixnSqlCommands = "UPDATE [dbo].[tblInteraction] SET EndDate = :endDate WHERE IxnID = :ixnID";
+
+		int emailOutSqlCommandsResult = 0;
+		int ixnSqlCommandsResult = 0;
 		try (Connection con = sql2o.open()){
-			result = con.createQuery(sqlCommands).addParameter("id",aId).addParameter("sentDate",aSentDate)
+			emailOutSqlCommandsResult = con.createQuery(emailOutSqlCommands).addParameter("id",aId).addParameter("sentDate",aSentDate)
+					.executeUpdate().getResult();
+
+			ixnSqlCommandsResult = con.createQuery(ixnSqlCommands).addParameter("ixnID",aIxnId).addParameter("endDate",aSentDate)
 					.executeUpdate().getResult();
 		}
+		jsonObject.addProperty("emailOutCount",emailOutSqlCommandsResult);
+		jsonObject.addProperty("ixnCount",ixnSqlCommandsResult);
 		
-		return result;
+		return jsonObject;
 	}
 	
 	/**
