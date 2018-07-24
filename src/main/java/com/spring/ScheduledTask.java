@@ -67,10 +67,14 @@ public class ScheduledTask {
             String contentType = emailOutJsonObject.get("contenttype").getAsString();
             String email_SenderAddress = emailOutJsonObject.get("fromaddress").getAsString();
             String msgtype = emailOutJsonObject.get("msgtype").getAsString();
-            String emailToName = emailOutJsonObject.get("toaddresses").getAsString();
             String ixnId = emailOutJsonObject.get("ixnid").getAsString();
 
             String id = emailOutJsonObject.get("id").getAsString();
+
+            String emailToName = "none";
+            if(emailOutJsonObject.has("toaddresses")){
+                emailToName = emailOutJsonObject.get("toaddresses").getAsString();
+            }
 
             String emailToNameForCc = "none";
             if(emailOutJsonObject.has("ccaddresses")){
@@ -113,14 +117,17 @@ public class ScheduledTask {
                     "[InfoAPI]ToolsController(EmailSender) - emailToName: "
                             + emailToName);
 
-            String[] emailToNameArray = emailToName.split(";");
+
 
             Map<String, String> emailToNameMap = new HashMap<>();
-            for (String emailToNameVal : emailToNameArray) {
-                emailToNameMap.put(emailToNameVal, emailToNameVal);
-                Util.getFileLogger().info(
-                        "[InfoAPI]ToolsController(EmailSender) - emailToNameVal: "
-                                + emailToNameVal);
+            if (!emailToName.equals("none")) {
+                String[] emailToNameArray = emailToName.split(";");
+                for (String emailToNameVal : emailToNameArray) {
+                    emailToNameMap.put(emailToNameVal, emailToNameVal);
+//                    Util.getFileLogger().info(
+//                            "[InfoAPI]ToolsController(EmailSender) - emailToNameVal: "
+//                                    + emailToNameVal);
+                }
             }
 
             Util.getFileLogger().info(
