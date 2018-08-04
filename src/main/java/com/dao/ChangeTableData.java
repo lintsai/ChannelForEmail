@@ -38,7 +38,7 @@ public class ChangeTableData {
 
 		String emailOutSqlCommands = "UPDATE [dbo].[tblEmailOut] " +
 				"SET SentDate = :sentDate " +
-				"WHERE id = :id";
+				"WHERE ID = :id";
 
 		String ixnSqlCommands = "UPDATE [dbo].[tblInteraction] SET EndDate = :endDate WHERE IxnID = :ixnID";
 
