@@ -32,15 +32,18 @@ public class GetTableData {
 		}
 
 		Sql2o sql2o = null;
-		try{
-			sql2o = new Sql2o(Util.getSystemParam().get("email_dbJndi"));
-		} catch (Exception e){
-			sql2o = new Sql2o(Util.getSystemParam().get("email_dbUrl"), Util.getSystemParam().get("email_dbUser"), Util.getSystemParam().get("email_dbPassword"));
-		}
+//		try{
+//			sql2o = new Sql2o(Util.getSystemParam().get("email_dbJndi"));
+//		} catch (Exception e){
+//			sql2o = new Sql2o(Util.getSystemParam().get("email_dbUrl"), Util.getSystemParam().get("email_dbUser"), Util.getSystemParam().get("email_dbPassword"));
+//		}
+		sql2o = new Sql2o(Util.getSystemParam().get("email_dbUrl"), Util.getSystemParam().get("email_dbUser"), Util.getSystemParam().get("email_dbPassword"));
 
 		JsonArray jsonarray = new JsonArray();
 
-		String sqlCommands = "SELECT [ID],[IxnID],[FromAddress],[FromPersonal],[ToAddresses],[CcAddresses],[BccAddresses],[SentDate],[Subject],[Content],[Attach],[AttachName],[MsgType],[ContentType],[ExpectTime] FROM [dbo].[tblEmailOut] WHERE SentDate is NULL;";
+		String sqlCommands = "SELECT [ID],[IxnID],[FromAddress],[FromPersonal],[ToAddresses],[CcAddresses],[BccAddresses],[SentDate],[Subject],[Content],[Attach],[AttachName],[MsgType],[ContentType],[ExpectTime] FROM [dbo].[tblEmailOut] WHERE SentDate IS NULL";
+//		String sqlCommands = "SELECT * FROM [dbo].[tblEmailOut] WHERE SentDate IS NULL";
+
 
 		List<Map<String, Object>> list = new ArrayList<>();
 		try (Connection con = sql2o.open()){

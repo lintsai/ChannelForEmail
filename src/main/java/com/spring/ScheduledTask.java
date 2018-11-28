@@ -73,17 +73,23 @@ public class ScheduledTask {
 
             String emailToName = "none";
             if(emailOutJsonObject.has("toaddresses")){
-                emailToName = emailOutJsonObject.get("toaddresses").getAsString();
+                if(emailOutJsonObject.get("toaddresses").getAsString().length() > 0){
+                    emailToName = emailOutJsonObject.get("toaddresses").getAsString();
+                }
             }
 
             String emailToNameForCc = "none";
             if(emailOutJsonObject.has("ccaddresses")){
-                emailToNameForCc = emailOutJsonObject.get("ccaddresses").getAsString();
+                if(emailOutJsonObject.get("ccaddresses").getAsString().length() > 0){
+                    emailToNameForCc = emailOutJsonObject.get("ccaddresses").getAsString();
+                }
             }
 
             String emailToNameForBcc = "none";
             if(emailOutJsonObject.has("bccaddresses")){
-                emailToNameForBcc = emailOutJsonObject.get("bccaddresses").getAsString();
+                if(emailOutJsonObject.get("bccaddresses").getAsString().length() > 0){
+                    emailToNameForBcc = emailOutJsonObject.get("bccaddresses").getAsString();
+                }
             }
 
             String emailAttachName = "";
