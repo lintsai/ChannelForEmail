@@ -29,11 +29,11 @@ public class EmailSender {
     private String charset;
     private Boolean isSSL;
     private Boolean isTLS;
+    private Boolean isAuth;
     private String msgType;
     private String contentType;
 
-    public EmailSender() {
-    }   
+    public EmailSender() {}
 
     /**
      * @param emailToNameMap
@@ -64,18 +64,17 @@ public class EmailSender {
             htmlEmail = new HtmlEmail();
             htmlEmail.setHostName(mailServer);
             htmlEmail.setCharset(charset);
-            htmlEmail.setAuthentication(userId, password);
+            if(isAuth){
+                htmlEmail.setAuthentication(userId, password);
+            }
             htmlEmail.setSmtpPort(serverPortInt);
             if (isTLS) {
-//                htmlEmail.setTLS(true);
                 htmlEmail.setStartTLSEnabled(true);
             }
             if (isSSL) {
                 htmlEmail.setSSLOnConnect(true);
                 htmlEmail.setSslSmtpPort(serverPort);
-            } else {
-                // htmlEmail.setStartTLSEnabled(true);
-            }
+            } else {}
             Util.getFileLogger().info("[InfoAPI]EmailSender(sendEmail) -  read emailToNameMap");
             for (String email : emailToNameMap.keySet()) {
                 htmlEmail.addTo(email, emailToNameMap.get(email));
@@ -119,10 +118,6 @@ public class EmailSender {
                 htmlEmail.updateContentType(contentType);
             }
 
-//            htmlEmail.setHtmlMsg(StringUtil.replaceNewLine_HTML(content));
-//            htmlEmail.attach(file) //TODO
-//            htmlEmail.attach(ds, name, description)
-//            htmlEmail.attach(new ByteArrayDataSource(pdfBytes, "application/pdf"),"document.pdf", "Document description",EmailAttachment.ATTACHMENT);
             Util.getFileLogger().info("[InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() GO");
             msg = htmlEmail.send();
             Util.getFileLogger().info("[InfoAPI]EmailSender(sendEmail) -  htmlEmail.send() END");
@@ -343,6 +338,21 @@ public class EmailSender {
      */
     public void setIsTLS(Boolean isTLS) {
         this.isTLS = isTLS;
+    }
+
+    /**
+     * @return the isAuth
+     */
+    public Boolean getIsAuth() {
+        return isAuth;
+    }
+
+    /**
+     * @param isAuth
+     *            the isTLS to set
+     */
+    public void setIsAuth(Boolean isAuth) {
+        this.isAuth = isAuth;
     }
 
     /**

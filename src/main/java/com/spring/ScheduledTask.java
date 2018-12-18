@@ -118,6 +118,7 @@ public class ScheduledTask {
             String email_IsTLS = fromEmailInfoArray.get(0).getAsJsonObject().get("istls").getAsString();
             String email_UserId = fromEmailInfoArray.get(0).getAsJsonObject().get("userid").getAsString();
             String email_IsSSL = fromEmailInfoArray.get(0).getAsJsonObject().get("isssl").getAsString();
+            String email_IsAuth = fromEmailInfoArray.get(0).getAsJsonObject().get("isauth").getAsString();
 
             Util.getFileLogger().info(
                     "[InfoAPI]ToolsController(EmailSender) - emailToName: "
@@ -220,6 +221,9 @@ public class ScheduledTask {
                         "[InfoAPI]ToolsController(EmailSender) - email_IsTLS: "
                                 + email_IsTLS);
                 Util.getFileLogger().info(
+                        "[InfoAPI]ToolsController(EmailSender) - email_IsAuth: "
+                                + email_IsAuth);
+                Util.getFileLogger().info(
                         "[InfoAPI]ToolsController(EmailSender) - msgtype: "
                                 + msgtype);
                 Util.getFileLogger().info(
@@ -229,11 +233,14 @@ public class ScheduledTask {
                 sender.setServerPort(email_MailServer_port);
                 sender.setServerPortInt(Integer.valueOf(email_MailServer_port)
                         .intValue());
-                sender.setUserId(email_UserId);
-                sender.setPassword(email_Password);
+                if(Boolean.valueOf(email_IsAuth)){
+                    sender.setUserId(email_UserId);
+                    sender.setPassword(email_Password);
+                }
                 sender.setCharset(email_Charset);
                 sender.setIsSSL(Boolean.valueOf(email_IsSSL));
                 sender.setIsTLS(Boolean.valueOf(email_IsTLS));
+                sender.setIsAuth(Boolean.valueOf(email_IsAuth));
                 sender.setMsgType(msgtype);
                 sender.setContentType(contentType);
                 Util.getFileLogger().info(

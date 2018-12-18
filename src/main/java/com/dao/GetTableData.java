@@ -89,7 +89,7 @@ public class GetTableData {
 
 		JsonArray jsonarray = new JsonArray();
 
-		String sqlCommands = "SELECT [MailServer],[MailServerPort],[UserId],[Password],[Charset],[IsSSL] ,[IsTLS] FROM [dbo].[tblCfg_FromEmail] WHERE FromEmail=:fromEmail";
+		String sqlCommands = "SELECT [MailServer],[MailServerPort],[UserId],[Password],[Charset],[IsSSL] ,[IsTLS],[IsAuth] FROM [dbo].[tblCfg_FromEmail] WHERE FromEmail=:fromEmail";
 
 		List<Map<String, Object>> list = new ArrayList<>();
 		try (Connection con = sql2o.open()){
