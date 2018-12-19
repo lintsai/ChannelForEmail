@@ -178,12 +178,13 @@ public class ScheduledTask {
                 }
             }
 
-            EmailSender sender = new EmailSender(emailToNameMap,
-                    emailToNameMapForCc, emailToNameMapForBcc, emailAttachMap,
-                    subject, content);
-            sender.setSenderAddress(email_SenderAddress);
-            sender.setSenderName(email_SenderName);
             try {
+                EmailSender sender = new EmailSender(emailToNameMap,
+                        emailToNameMapForCc, emailToNameMapForBcc, emailAttachMap,
+                        subject, content);
+                sender.setSenderAddress(email_SenderAddress);
+                sender.setSenderName(email_SenderName);
+
                 Util.getFileLogger()
                         .info("[InfoAPI]ToolsController(EmailSender) - setEmailServer GO");
                 Util.getFileLogger().info(
