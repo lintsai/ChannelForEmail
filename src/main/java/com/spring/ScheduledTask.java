@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import com.dao.ChangeTableData;
 import com.dao.GetTableData;
@@ -109,7 +110,7 @@ public class ScheduledTask {
                 e.printStackTrace();
             }
 
-            System.out.println("fromEmailInfoArray: "+fromEmailInfoArray);
+            //System.out.println("fromEmailInfoArray: "+fromEmailInfoArray);
 
             String email_Charset = fromEmailInfoArray.get(0).getAsJsonObject().get("charset").getAsString();
             String email_Password = fromEmailInfoArray.get(0).getAsJsonObject().get("password").getAsString();
@@ -163,34 +164,20 @@ public class ScheduledTask {
                 }
             }
 
-            Map<String, byte[]> emailAttachMap = new HashMap<>();
-            byte[] emailAttachAsBytes = null;
-            if (!emailAttach.equals("")
-                    && !emailAttachName.equals("")) {
-                String csv = null;
-                try {
-                    JSONArray docs = new JSONArray(emailAttach);
-                    csv = CDL.toString(docs);
-                } catch (JSONException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                    Util.getFileLogger().error(
-                            "[InfoAPI]ToolsController(EmailSender) - JSONException: "
-                                    + e.getMessage());
+            Map<String, String> emailAttachMap = new HashMap<>();
+            if(emailAttach != null && emailAttach.length() > 0){
+                JsonArray emailAttachArray = Util.getGJsonArray(emailAttach);
+
+                for (int i = 0; i < emailAttachArray.size(); i++) {
+                    Set<String> keys = emailAttachArray.get(i).getAsJsonObject().keySet();
+                    String key = null;
+                    for(String k:keys){
+                        key = k;
+                    }
+                    emailAttachMap.put(key, emailAttachArray.get(i).getAsJsonObject().get(key).getAsString());
                 }
-                try {
-                    emailAttachAsBytes = csv.getBytes("BIG5");
-                } catch (UnsupportedEncodingException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
-                    Util.getFileLogger().error(
-                            "[InfoAPI]ToolsController(EmailSender) - Exception: "
-                                    + e.getMessage());
-                }
-                Util.getFileLogger().info(
-                        "[InfoAPI]ToolsController(EmailSender) - csv: " + csv);
-                emailAttachMap.put(emailAttachName, emailAttachAsBytes);
             }
+
             EmailSender sender = new EmailSender(emailToNameMap,
                     emailToNameMapForCc, emailToNameMapForBcc, emailAttachMap,
                     subject, content);

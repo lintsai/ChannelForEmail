@@ -1,5 +1,6 @@
 package com.service;
 
+import java.net.URL;
 import java.util.Map;
 
 import javax.mail.internet.MimeUtility;
@@ -16,7 +17,7 @@ public class EmailSender {
     private Map<String, String> emailToNameMap;
     private Map<String, String> emailToNameMapForCc;
     private Map<String, String> emailToNameMapForBcc;
-    private Map<String, byte[]> emailAttachMap;
+    private Map<String, String> emailAttachMap;
     private String senderName;
     private String senderAddress;
     private String subject;
@@ -43,7 +44,7 @@ public class EmailSender {
      * @param content
      */
     public EmailSender(Map<String, String> emailToNameMap, Map<String, String> emailToNameMapForCc,
-            Map<String, String> emailToNameMapForBcc, Map<String, byte[]> emailAttachMap, String subject, String content) {
+            Map<String, String> emailToNameMapForBcc, Map<String, String> emailAttachMap, String subject, String content) {
         this.emailToNameMap = emailToNameMap;
         this.emailToNameMapForCc = emailToNameMapForCc;
         this.emailToNameMapForBcc = emailToNameMapForBcc;
@@ -98,8 +99,11 @@ public class EmailSender {
             if(emailAttachMap != null && emailAttachMap.size() > 0) {
             	Util.getFileLogger().info("sendEmail -  read emailAttachMap");
             	for(String fileName : emailAttachMap.keySet()) {
-            		 htmlEmail.attach(new ByteArrayDataSource(emailAttachMap.get(fileName), "application/octet-stream")
-                     ,MimeUtility.encodeText(fileName, "utf-8", null), "Document description",EmailAttachment.ATTACHMENT);
+                    EmailAttachment attachment = new EmailAttachment();
+                    attachment.setURL(new URL(emailAttachMap.get(fileName)));
+                    attachment.setDisposition(EmailAttachment.ATTACHMENT);
+                    attachment.setName(fileName);
+            		htmlEmail.attach(attachment);
             	}
             }
             

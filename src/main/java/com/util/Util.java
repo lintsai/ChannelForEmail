@@ -28,6 +28,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.google.gson.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,10 +38,6 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import com.bean.VersionBean;
-import com.google.gson.Gson;
-import com.google.gson.JsonNull;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.spring.SpringContextHolder;
 
 public class Util {
@@ -74,6 +71,11 @@ public class Util {
 	public static JsonObject getGJsonObject(String aMsg){
 		JsonParser jsonParser = new JsonParser(); 
 		JsonObject msgJson = jsonParser.parse(aMsg).getAsJsonObject();
+		return msgJson;
+	}
+	public static JsonArray getGJsonArray(String aMsg){
+		JsonParser jsonParser = new JsonParser();
+		JsonArray msgJson = jsonParser.parse(aMsg).getAsJsonArray();
 		return msgJson;
 	}
 	public static String getGString(JsonObject aObj, String aKey){
