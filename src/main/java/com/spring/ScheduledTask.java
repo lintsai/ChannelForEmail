@@ -173,8 +173,8 @@ public class ScheduledTask {
                     String key = null;
                     for(String k:keys){
                         key = k;
+                        emailAttachMap.put(key, emailAttachArray.get(i).getAsJsonObject().get(key).getAsString());
                     }
-                    emailAttachMap.put(key, emailAttachArray.get(i).getAsJsonObject().get(key).getAsString());
                 }
             }
 
