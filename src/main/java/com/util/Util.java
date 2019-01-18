@@ -135,4 +135,14 @@ public class Util {
         return value;
     }
 
+	public static String changeString(String str){
+		for(char c:str.toCharArray()){
+			str = str.replaceAll("　", " ");
+			if((int)c >= 65281 && (int)c <= 65374){
+				str = str.replace(c, (char)(((int)c)-65248));
+			}
+		}
+		return str;
+	}
+
 }

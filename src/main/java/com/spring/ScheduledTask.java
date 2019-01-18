@@ -164,15 +164,20 @@ public class ScheduledTask {
                 }
             }
 
+            Util.getFileLogger().info("emailAttach: "+emailAttach);
+
             Map<String, String> emailAttachMap = new HashMap<>();
             if(emailAttach != null && emailAttach.length() > 0){
                 JsonArray emailAttachArray = Util.getGJsonArray(emailAttach);
+                Util.getFileLogger().info("emailAttachArray: "+emailAttachArray);
 
                 for (int i = 0; i < emailAttachArray.size(); i++) {
                     Set<String> keys = emailAttachArray.get(i).getAsJsonObject().keySet();
                     String key = null;
                     for(String k:keys){
                         key = k;
+                        Util.getFileLogger().info("Attach key: "+key);
+                        Util.getFileLogger().info("Attach val: "+emailAttachArray.get(i).getAsJsonObject().get(key).getAsString());
                         emailAttachMap.put(key, emailAttachArray.get(i).getAsJsonObject().get(key).getAsString());
                     }
                 }

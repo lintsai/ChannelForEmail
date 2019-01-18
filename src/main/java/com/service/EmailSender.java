@@ -99,10 +99,12 @@ public class EmailSender {
             if(emailAttachMap != null && emailAttachMap.size() > 0) {
             	Util.getFileLogger().info("sendEmail -  read emailAttachMap");
             	for(String fileName : emailAttachMap.keySet()) {
+                    Util.getFileLogger().info("sendEmail -  fileName: "+fileName);
+                    Util.getFileLogger().info("sendEmail -  Url: "+emailAttachMap.get(fileName));
                     EmailAttachment attachment = new EmailAttachment();
                     attachment.setURL(new URL(emailAttachMap.get(fileName)));
                     attachment.setDisposition(EmailAttachment.ATTACHMENT);
-                    attachment.setName(fileName);
+                    attachment.setName(Util.changeString(fileName));
             		htmlEmail.attach(attachment);
             	}
             }

@@ -12,23 +12,32 @@
 			<PatternLayout pattern="[%d{yy/MM/dd HH:mm:ss.SSS}][%5p][%-35C-%-5L] - %m%n" />
 		</Console>
 
-		<File name="commonFile" fileName="log4j2/common.log">
+		<File name="commonFile" fileName="${sys:catalina.home}/logs/infotrends/email.log">
 			<PatternLayout>
 				<Pattern>[%d{yy/MM/dd HH:mm:ss.SSS}][%5p][%-35C-%-5L] - %m%n</Pattern>
 			</PatternLayout>
+			<Policies>
+				<!-- interval 決定該單位下的間隔數， interval 設置為 5，那麼就是5天生成一個日誌-->
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+				<!--用於設置單個日誌檔的大小上限，filepattern 中的 "%i" 輸出檔的次序，ex: filePattern="${LOG_HOME}/error-%i.log" 設置設置符合同個filePath的日誌檔的最大數量-->
+				<!--<SizeBasedTriggeringPolicy size="50 MB" />-->
+			</Policies>
+			<!--<DefaultRolloverStrategy max="20"/> 用於設置符合同個filePath的日誌檔的最大數量，超過這個數量時，
+			新產生的日誌檔會覆蓋舊的日誌檔，沒有設置時，預設值為7-->
+			<DefaultRolloverStrategy max="7"/>
 		</File>
 
-		<File name="statusFile" fileName="log4j2/statusFile.log">
-			<PatternLayout>
-				<Pattern>[%d{yy/MM/dd HH:mm:ss}][%5p][%-35C-%-5L] - %m%n</Pattern>
-			</PatternLayout>
-		</File>
+		<!--<File name="statusFile" fileName="log4j2/statusFile.log">-->
+			<!--<PatternLayout>-->
+				<!--<Pattern>[%d{yy/MM/dd HH:mm:ss}][%5p][%-35C-%-5L] - %m%n</Pattern>-->
+			<!--</PatternLayout>-->
+		<!--</File>-->
 
-		<File name="pressureTestFile" fileName="log4j2/pressureTestFile.log">
-			<PatternLayout>
-				<Pattern>[%d{yy/MM/dd HH:mm:ss}][%5p][%-35C-%-5L] - %m%n</Pattern>
-			</PatternLayout>
-		</File>
+		<!--<File name="pressureTestFile" fileName="log4j2/pressureTestFile.log">-->
+			<!--<PatternLayout>-->
+				<!--<Pattern>[%d{yy/MM/dd HH:mm:ss}][%5p][%-35C-%-5L] - %m%n</Pattern>-->
+			<!--</PatternLayout>-->
+		<!--</File>-->
 
 	</Appenders>
 	<Loggers>
@@ -43,12 +52,12 @@
 		<logger name="util.fileLogger" level="info" additivity="false">
 			<AppenderRef ref="commonFile" />
 		</logger>
-		<logger name="util.statusFileLogger" level="info" additivity="false">
-			<AppenderRef ref="statusFile" />
-		</logger>
-		<logger name="util.pressureTestFileLogger" level="info" additivity="false">
-			<AppenderRef ref="pressureTestFile" />
-		</logger>
+		<!--<logger name="util.statusFileLogger" level="info" additivity="false">-->
+			<!--<AppenderRef ref="statusFile" />-->
+		<!--</logger>-->
+		<!--<logger name="util.pressureTestFileLogger" level="info" additivity="false">-->
+			<!--<AppenderRef ref="pressureTestFile" />-->
+		<!--</logger>-->
 
 
 	</Loggers>
